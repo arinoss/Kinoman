@@ -1,5 +1,10 @@
-import {createHeaderProfile, createFilmCard, createMainNavigation, createMainSort, createPopupFilmDetails, createSectionFilms, createTopFilmsList, createButtonShowMoreFilms} from "./templates-index"
 import {FILMS_COUNT, TOP_CATEGORIES_COUNT, TOP_FILMS_COUNT} from "./variables.js";
+import {createHeaderProfile} from "./user-info.js";
+import {createFilmCard, createSectionFilms, createButtonShowMoreFilms} from "./films-list.js";
+import {createMainNavigation} from "./filters.js";
+import {createMainSort} from "./sort.js";
+import {createPopupFilmDetails} from "./film-details-popup.js";
+import {createTopFilmsList} from "./top-films.js";
 
 // Функция для рендеринга элементов
 const rendering = (container, template, place) => {
